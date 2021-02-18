@@ -102,7 +102,7 @@
                             }
                         ], function (error, user) {
                             if (error) {
-                                winston.log('verbose', '[plugins/ns-login] Error: ' + error.message);
+                                winston.log('warn', '[plugins/ns-login] Error: ' + error.message);
                                 return res.status(403).json({
                                     message: error.message
                                 });
